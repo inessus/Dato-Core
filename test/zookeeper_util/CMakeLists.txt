@@ -1,4 +1,0 @@
-project(zookeeper_util_test)
-
-make_executable(zookeeper_test SOURCES zookeeper_test.cpp REQUIRES zookeeper_util)
-make_executable(zookeeper_kv_test SOURCES zookeeper_kv_test.cpp REQUIRES zookeeper_util)

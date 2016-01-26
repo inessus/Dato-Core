@@ -1,8 +1,0 @@
-macro(requires_python NAME)
-  FIND_PACKAGE(PythonLibs REQUIRED)
-  if (APPLE)
-    target_link_libraries(${NAME} ${PYTHON_LIBRARIES} z)
-  else()
-    target_link_libraries(${NAME} ${PYTHON_LIBRARIES} z rt)
-  endif()
-endmacro(requires_python)
